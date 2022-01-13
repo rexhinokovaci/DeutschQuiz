@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="purple_700">#E11F21</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="whiteColor">#faebd7</color>
+    <color name="blackColor">#000000</color>
+    <color name="bumblebeeColor">#FFE873</color>
+    <color name="realWhiteColor">#ffffff</color>
+    <color name="greyShadeColor">#5d5d5d</color>
+    <color name="javablue">#E11F21</color>
+
+</resources>

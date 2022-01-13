@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Quiz Shqip</string>
+    <string name="distributionText">from MODEX</string>
+    <string name="powered_by_n_modex">Powered by\n Modex</string>
+    <string name="buttonConfirmation">Follow</string>
+    <string name="follow_us_on_twitter">Follow us on Instagram</string>
+    <string name="todo">TODO</string>
+    <string name="close">close</string>
+    <string name="bugs_work_text_user">Let\'s Find Out!</string>
+    <string name="rate_dialog_title" tools:keep="@string/rate_dialog_title">Rate this app</string>
+    <string name="rate_dialog_message" tools:keep="@string/rate_dialog_message">If you enjoy playing this app, would you mind taking a moment to rate it? It won\'t take more than a minute. Thanks for your support!</string>
+    <string name="rate_dialog_ok" tools:keep="@string/rate_dialog_ok">Rate It Now</string>
+    <string name="rate_dialog_cancel" tools:keep="@string/rate_dialog_cancel">Remind Me Later</string>
+    <string name="rate_dialog_no" tools:keep="@string/rate_dialog_no">No, Thanks</string>
+    <string name="question_1_x">Question: </string>
+    <string name="score_x">Score: </string>
+    <string name="_00_30">00:30</string>
+    <string name="questionQuestion">QuestionQuestionQuestionQuestionQuestionQuestionQuestionQuestionQuestion</string>
+    <string name="option_1">Option 1</string>
+    <string name="option_2">Option 2</string>
+    <string name="option_3">Option 3</string>
+    <string name="option_4">Option 4</string>
+    <string name="play">Play</string>
+</resources>

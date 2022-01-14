@@ -37,11 +37,12 @@ import java.util.Timer;
 
 import static java.lang.String.*;
 
-
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 
 @SuppressWarnings("ALL")
 public class MainActivity extends AppCompatActivity {
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     private static final int REQ_CODE_QUIZ = 1;
     public static final String EXTRA_DIFFICULTY = "extraDifficulty";
@@ -60,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         textViewHighScore = findViewById(R.id.textView_highScore);
         loadHighscore();
@@ -68,6 +70,11 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+        Bundle bundle = new Bundle();
+        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "MainId");
+        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "MainName");
+        bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "MainImage");
+        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
 
 
         viewPageId = findViewById(R.id.viewPageId);

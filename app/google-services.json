@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "347052931309",
+    "project_id": "deutsch-quiz-cf08f",
+    "storage_bucket": "deutsch-quiz-cf08f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347052931309:android:2874ca5dc080642f4bb4e4",
+        "android_client_info": {
+          "package_name": "com.modex.deutschquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "347052931309-6l8d58163eqsoc2s7mqptvjup8iqo3hb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRmPKfVyYwAoHi6yI2Xd1jV6vr3Vk5jTg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "347052931309-6l8d58163eqsoc2s7mqptvjup8iqo3hb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

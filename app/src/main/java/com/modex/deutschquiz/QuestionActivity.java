@@ -41,10 +41,13 @@ import java.util.Locale;
 
 import static java.lang.String.format;
 
+import com.google.firebase.analytics.FirebaseAnalytics;
+
 
 @SuppressWarnings({"unused", "RedundantSuppression"})
 public class QuestionActivity extends AppCompatActivity {
 
+    private FirebaseAnalytics mFirebaseAnalytics;
     private static final long COUNT_DOWN_TIME = 30000;
     private static final String KEY_SCORE = "keyScore";
     private static final String KEY_QUESTION_COUNT = "keyQuestionCount";
@@ -76,6 +79,7 @@ public class QuestionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question);
 
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         textViewScores = findViewById(R.id.textViewScore);
         textViewQuestion = findViewById(R.id.textViewQuestion);
@@ -136,6 +140,15 @@ public class QuestionActivity extends AppCompatActivity {
         radioButton3.setOnClickListener(v -> showSolution());
 
         radioButton4.setOnClickListener(v -> showSolution());
+
+
+
+        Bundle bundle = new Bundle();
+        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "QuestionId");
+        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "QuestionName");
+        bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "QuestionImage");
+        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
+
 
 
     }

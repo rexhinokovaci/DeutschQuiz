@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     private static final int REQ_CODE_QUIZ = 1;
     public static final String EXTRA_DIFFICULTY = "extraDifficulty";
     public static final String SHARED_PRFSS = "sharedPrefs";
-    public static final String KEY_HIGHSCORE = "keyHighScore";
+    public static final String KEY_HIGHSCORE = "keyHighScoree";
     private int highScore;
     private long backPressed;
     private Dialog twitterDialog;

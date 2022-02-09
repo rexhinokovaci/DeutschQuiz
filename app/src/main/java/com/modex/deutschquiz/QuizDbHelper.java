@@ -120,35 +120,35 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         AddQuestion(q17);
         QuestionClass q18 = new QuestionClass("Wasserstoff-Entdecker", "Amedeo Avogadro", "Henry Cavendish", "John Dalton", "Antoine Lavoisie", 2, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q18);
-        QuestionClass q19 = new QuestionClass("Cili Shtet Quhet \"Shtetit i Liqeneve\"", "Suedia", "Norvegjia", "Finlanda", "Rusia", 3, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q19 = new QuestionClass("Welcher Staat heißt \"Staat der Seen\"", "Schweden", "Norwegen", "Finnland", "Russland", 3, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q19);
-        QuestionClass q20 = new QuestionClass("Sa eshte masa relative molekulare e amonakiut", "4", "7","16","17", 4, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q20 = new QuestionClass("Was ist die relative Molekülmasse der Amonachie", "4", "7","16","17", 4, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q20);
 
         //Easy Monday 5
-        QuestionClass q21 = new QuestionClass("Cili eshte shteti me dendesine me te madhe per banore", "Kina", "India", "Rusia", "Brazili", 1, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q21 = new QuestionClass("Was ist der Staat mit der größten Einwohnerdichte", "China", "Indien", "Russland", "Brasilien", 1, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q21);
-        QuestionClass q22 = new QuestionClass("Ne cilin vit udhetoi magelani pertej botes", "1418", "1419", "1420", "1421", 2, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q22 = new QuestionClass("In welchem Jahr reiste der Magelan über die Welt hinaus", "1418", "1419", "1420", "1421", 2, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q22);
-        QuestionClass q23 = new QuestionClass("Cfare domethenie ka fjala \"ISKENDER\"", "Vella", "Rojtar perandorise", "Aleksander", "Luftetar", 3, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q23 = new QuestionClass("Was hat Methenia das Wort \"ISKENDER\"", "Vella", "Empire Ranger", "Alexander", "Warrior", 3, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q23);
-        QuestionClass q24 = new QuestionClass("Dita e Shen Patrikut", "Mars 17", "Prill 17","Maj 17","Qershor 17", 4, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q24 = new QuestionClass("Saint Patrick's Day", "17. März", "17. April", "17. Mai", "17. Juni", 4, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q24);
 
         //EASY MONDAY 6
-        QuestionClass q25 = new QuestionClass("Një përbërje e bërë nga atome hidrogjeni dhe karboni", "Hidrokarbon", "Hidrogjen", "Helium", "Holmium", 1, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q25 = new QuestionClass("Eine Verbindung aus Wasserstoff und Kohlenstoffatomen", "Kohlenwasserstoff", "Wasserstoff", "Helium", "Holmium", 1, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q25);
-        QuestionClass q26 = new QuestionClass("Nënkryetari i SHBA i cili është shfaqur në futurama", "Mike Pence", "Al Gore", "Joe Biden", "Dick Cheney", 2, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q26 = new QuestionClass("Wir stellvertretender Führer, der in Futurama erschienen ist", "Mike Pence", "Al Gore", "Joe Biden", "Dick Cheney", 2, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q26);
-        QuestionClass q27 = new QuestionClass("Magji e zezë dhe është një besim shpirtëror duke përdorur magji dhe magji.", "Inkatation", "Chanium", "Juju", "Asnje", 3, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q27 = new QuestionClass("Schwarze Magie und ist ein spiritueller Glaube, der Magie und Magie verwendet.", "Inkatation", "Chanium", "Juju", "Asnje", 3, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q27);
-        QuestionClass q28 = new QuestionClass("Cili metal nuk është i ngurtë në temperaturën e dhomës?", "Zink", "Barium","Indium","Merkuri", 4, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q28 = new QuestionClass("Welches Metall ist bei Raumtemperatur nicht fest?", "Zink", "Barium", "Indium", "Quecksilber", 4, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q28);
 
         // EASY MONDAY EXTRA +2
-        QuestionClass q29 = new QuestionClass("Crregullim i hiperaktivitetit nga deficiti i vëmendjes.", "Depresion", "Ankth", "ADHD", "Semundje e Turretes", 3, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q29 = new QuestionClass("Hyperaktivitätsstörung durch Aufmerksamkeitsdefizit", "Depression", "Angst", "ADHAND", "Semundje de Turrete", 3, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q29);
-        QuestionClass q30 = new QuestionClass("Sundimtari rus", "Putin", "Stalini","Malenkov","Czar", 4, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q30 = new QuestionClass("Russischer Herrscher", "Putin", "Stalin", "Malenkow", "Zar", 4, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q30);
 
         // TODO: 1/11/2021 Start with medium 30 questions

@@ -73,51 +73,52 @@ public class QuizDbHelper extends SQLiteOpenHelper {
     private void fillQuestionsTable () {
 
         //Easy FRIDAY 0
-        QuestionClass q1 = new QuestionClass("Studimi i origjinës së fjalëve", "Etimologjia", "Antropogjnia", "Paleantropologjia", "Etiologjia", 1, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q1 = new QuestionClass("Studie über den Ursprung der Worte", "Ethologie", "Antropognia", "Paläanthropologie", "Ethiologie", 1, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q1);
-        QuestionClass q2 = new QuestionClass("10-ta ne gjermanisht", "Ten", "Zehn", "Tien", "Dek", 2, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q2 = new QuestionClass("10. auf Albanisch", "Ten", "Dhjete", "Tien", "Dek",  2, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q2);
-        QuestionClass q3 = new QuestionClass("Krijuesi i tabeles periodike", "John Dalton", "Ernest Rutherford", "Dmitri Mendeleev", "Alfred Nobel", 3, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q3 = new QuestionClass("Schöpfer des Periodensystems", "John Dalton", "Ernest Rutherford", "Dmitry Mendeleev", "Alfred Nobel", 3, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q3);
-        QuestionClass q4 = new QuestionClass("Elementi që aktivizohet në leng në temperaturë dhomë", "Hidrogjeni", "Zink", "Alumini", "Mercury", 4, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q4 = new QuestionClass("Element, das im Lang bei Raumtemperatur aktiviert wird", "Wasserstoff", "Zink", "Aluminium",
+                "Mercury", 4, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q4);
 
         //EASY FRIDAY 1
 
-        QuestionClass q5 = new QuestionClass("Në cilin vend do të gjeni malin Kilimanjaro?", "Tanzania", "Kili", "Paraguaj", "Uruguaj", 1, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q5 = new QuestionClass("In welchem Land finden Sie den Kilimandscharo?", "Tansania", "Chile", "Paraguay", "Uruguay", 1, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q5);
-        QuestionClass q6 = new QuestionClass("Një ekzagjerim ekstrem i fjaleve", "Metafore", "Hiperbole", "Epitet", "Idioma", 2, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q6 = new QuestionClass("Eine extreme Übertreibung der Wörter", "Metapher", "Übertreibung", "Epithet", "Idioma", 2, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q6);
         QuestionClass q7 = new QuestionClass("CAD", "Computer Architecture Design", "Computer Analyzing Design", "Computer Aided Design", "Computer Assistant Design", 3, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q7);
-        QuestionClass q8 = new QuestionClass("Kjo është seria e numrave në të cilën dy termat e parë janë 0 dhe 1 dhe secili numër që vijon është shuma e dy paraardhësve.", "Sekuenca Aritmetike", "Sekuenca e Cauchy", "Sekuenca periodike", "Sekuenca e Fibonacit", 4, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q8 = new QuestionClass("Dies ist die Zahlenreihe, in der die ersten beiden Terme 0 und 1 sind und jede Folgende Zahl die Summe zweier Vorfahren ist.", "Arithmetische Sequenz", "Cauchy-Sequenz", "Periodische Sequenz", "Fibonac-Sequenz", 4, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q8);
 
         //EASY FRIDAY 2
-        QuestionClass q9 = new QuestionClass("Shteti më i vogël i botës", "Vatikani", "Monako", "San Marino", "Tuvalu", 1, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q9 = new QuestionClass("Kleinster Staat der Welt", "Vatikan", "Monaco", "San Marino", "Tuvalu", 1, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q9);
-        QuestionClass q10 = new QuestionClass("ishulli me i madh ne bote", "Madagaskar", "Groelanda", "Guinea e Re", "Borneo", 2, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q10 = new QuestionClass("Die größte Insel der Welt", "Madagaskar", "Grönland", "Neuguinea", "Borneo", 2, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q10);
-        QuestionClass q11 = new QuestionClass("Themelues i tre ligje themeletare të lëvizjes", "Galileo Galilei", "Isak Borrow", "Isak Njutoni", "Johan Kepler", 3, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q11 = new QuestionClass("Gründer von drei Grundgesetzen der Bewegung", "Galileo Galilei", "Isaac Borrow", "Isaac Newton", "Johan Kepler", 3, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q11);
-        QuestionClass q12 = new QuestionClass("Nga Cili Shtet Rrjedh Fjala Kimi", "India", "Kina", "Persia", "Egjipti", 4, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q12 = new QuestionClass("Aus welchem Staat fließt das Wort Chemie", "Indien", "China", "Persien", "Ägypten", 4, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q12);
 
         //EASY FRIDAY 3
-        QuestionClass q13 = new QuestionClass("Ushtar shekspirian, i huaj, hero", "Otelli", "Hamleti", "Princi Hal", "Antoni", 1, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q13 = new QuestionClass("Shakespeare-Soldat Ausländer Held", "Otelli", "Hamlet", "Prinz Hal", "Anthony", 1, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q13);
-        QuestionClass q14 = new QuestionClass("Presidenti i pare ne Shqiperi", "Ramiz Alia", "Ahmet Zogu", "Sali Berisha", "Asnje", 2, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q14 = new QuestionClass("Erster Präsident in Kumanovo", "Ramiz Alia", "Ahmet Zogu", "Sali Berisha", "Asnje", 2, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q14);
-        QuestionClass q15 = new QuestionClass("Hekuri ne tabelen periodike", "I", "HE", "FE", "GD", 3, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q15 = new QuestionClass("Eisen im Periodensystem", "I", "HE", "FE", "GD", 3, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q15);
-        QuestionClass q16 = new QuestionClass("studimi i shkëmbinjve", "Liturgjiologji", "Limnologjia","Labeorfili","Litologji", 4, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q16 = new QuestionClass("Studium der Felsen", "Liturgie", "Limnologie", "Labeorphilie", "Litologie", 4, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q16);
 
         //EASY Monday 4
         // TODO: 1/11/2021 * today we will still implement some question on our db and check it from online questions or do it ourselves. make sure they are correct
-        QuestionClass q17 = new QuestionClass("10 Numrat e pare te Pi-se", "3.1415926535", " 3.1415929535", " 3.1415926534", " 3.1419526535", 1, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q17 = new QuestionClass("10 Erste Zahlen von Pi-Se", "3.1415926535", " 3.1415929535", " 3.1415926534", " 3.1419526535", 1, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q17);
-        QuestionClass q18 = new QuestionClass("Zbuluesi i Hidrogjen-it", "Amedeo Avogadro", "Henry Cavendish", "John Dalton", "Antoine Lavoisie", 2, QuestionClass.DIFFICULTY_EASY);
+        QuestionClass q18 = new QuestionClass("Wasserstoff-Entdecker", "Amedeo Avogadro", "Henry Cavendish", "John Dalton", "Antoine Lavoisie", 2, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q18);
         QuestionClass q19 = new QuestionClass("Cili Shtet Quhet \"Shtetit i Liqeneve\"", "Suedia", "Norvegjia", "Finlanda", "Rusia", 3, QuestionClass.DIFFICULTY_EASY);
         AddQuestion(q19);

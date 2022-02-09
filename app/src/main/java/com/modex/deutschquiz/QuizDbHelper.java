@@ -153,82 +153,82 @@ public class QuizDbHelper extends SQLiteOpenHelper {
 
         // TODO: 1/11/2021 Start with medium 30 questions
         //MEDIUM MONDAY 0
-        QuestionClass q31 = new QuestionClass("Ish arma tregtare e peshkimit", "Harpoon", "Fishing 300", "AK Fishnet", "Royal Nets", 1, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q31 = new QuestionClass("Ehemalige kommerzielle Fischereiwaffe", "Harpoon", "Fishing 300", "AK Fishnet", "Royal Nets", 1, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q31);
-        QuestionClass q32 = new QuestionClass("Artisti i natës me yje", "Leonardo Da Vinci", "Vincent Van Gogh", "Jan van Eyck", "Gustav Klimt", 2, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q32 = new QuestionClass("Star-Studded Night Artist", "Leonardo Da Vinci", "Vincent Van Gogh", "Jan van Eyck", "Gustav Klimt", 2, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q32);
-        QuestionClass q33 = new QuestionClass("Viti i krijimit te Magna Kartes", "1213", "1214", "1215", "1216", 3, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q33 = new QuestionClass("Jahr der Gründung von Magna Cartes", "1213", "1214", "1215", "1216", 3, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q33);
-        QuestionClass q34 = new QuestionClass("Kanadezi i parë që ecën në hapësirë", "Yuri Gagarin", "Alan Shepard","Indium","Chris Hadfield", 4, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q34 = new QuestionClass("Der erste Kanadier, der im Weltraum spazieren ging", "Yuri Gagarin", "Alan Shepard","Indium","Chris Hadfield", 4, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q34);
 
         //Medium Monday 1
-        QuestionClass q35 = new QuestionClass("Ku u ndërtua Titaniku", "Belfast", "London", "Leeds", "Bristol", 1, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q35 = new QuestionClass("Wo die Titanic gebaut wurde", "Belfast", "London", "Leeds", "Bristol", 1, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q35);
-        QuestionClass q36 = new QuestionClass("Viti i katastroges i Çernobilit", "1985" ,"1986", "1987", "1988", 2, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q36 = new QuestionClass("Das Jahr der Katastrophe von Tschernobyl", "1985" ,"1986", "1987", "1988", 2, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q36);
-        QuestionClass q37 = new QuestionClass("Renia e murit te Berlinit", "1987", "1988", "1989", "1990", 3, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q37 = new QuestionClass("\"Fall\" der Berliner Mauer", "1987", "1988", "1989", "1990", 3, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q37);
-        QuestionClass q38 = new QuestionClass("Beteja e Britanise", "1937", "1938","1939","1940", 4, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q38 = new QuestionClass("Luftschlacht um England", "1937", "1938","1939","1940", 4, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q38);
 
         // Medium Monday 2
-        QuestionClass q39 = new QuestionClass("Kur u vendos monedha Euro", "1999", "2000", "2001", "2002", 1, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q39 = new QuestionClass("Als die Euro-Währung eingeführt wurde", "1999", "2000", "2001", "2002", 1, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q39);
-        QuestionClass q40 = new QuestionClass("metoda e luftës ku sulmuesi kryeson një sulm duke përdorur një përqendrim të shpejtë të forcës dërrmuese që mund të përbëhet nga forca të blinduara dhe të motorizuara ose të mekanizuara të këmbësorisë",
+        QuestionClass q40 = new QuestionClass("Die Methode des Krieges, bei der der Angreifer einen Angriff mit einer schnellen Konzentration überwältigender Kräfte führt, die aus gepanzerten und motorisierten oder mechanisierten Infanteriekräften bestehen können",
                 "Beetle" ,"Blitzkrieg", "Turtle", "British Broom", 2, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q40);
-        QuestionClass q41 = new QuestionClass("Astronauti amerikan që ka qëndruar më gjatë në orbitë", "Scott Kelly", "Christina Koch", "Peggy Whitson", "Neil Armstrong", 3, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q41 = new QuestionClass("Der amerikanische Astronaut, der länger im Orbit geblieben ist", "Scott Kelly", "Christina Koch", "Peggy Whitson", "Neil Armstrong", 3, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q41);
-        QuestionClass q42 = new QuestionClass("Graphics Interchangeable Format", "1937", "Graphics Index Figure","Graphics Index Format","Graphics Interchange Format", 4, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q42 = new QuestionClass("Graphics Interchangeable Format", "JIG", "JIF","GNF","GIF", 4, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q42);
 
         //MEDIUM MONDAY 3
-        QuestionClass q43 = new QuestionClass("50 ne numra romake", "L", "X", "XX", "C", 1, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q43 = new QuestionClass("50 in römischen Zahlen","L", "X", "XX", "C", 1, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q43);
-        QuestionClass q44 = new QuestionClass("Trajtimi me rrezet x", "chemotherapy" ,"radiotherapy", "brachytherapy", "radiation oncology", 2, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q44 = new QuestionClass("Behandlung mit Röntgenstrahlen", "chemotherapy" ,"radiotherapy", "brachytherapy", "radiation oncology", 2, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q44);
-        QuestionClass q45 = new QuestionClass("Ministri i parë i Skocisë", "Rupert Murdoch", "Sadiq Khan", "Nicola sturgeon", "Tony Blair", 3, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q45 = new QuestionClass("Erster Minister von Schottland", "Rupert Murdoch", "Sadiq Khan", "Nicola sturgeon", "Tony Blair", 3, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q45);
-        QuestionClass q46 = new QuestionClass("Kush e zbuloi penicilinën", "Marie Curie", "John Dalton","JJ Thomson","Alexander Fleming", 4, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q46 = new QuestionClass("Wer entdeckte Penicillin", "Marie Curie", "John Dalton","JJ Thomson","Alexander Fleming", 4, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q46);
 
         // Medium MONDAY 4
-        QuestionClass q47 = new QuestionClass("një kënd më i madh se 180", "i lugët", "i myset", "kend-drejte", "kend-ngushte", 1, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q47 = new QuestionClass("Ein Winkel größer als 180", "Löffel", "Mystes", "Kend-Straighte", "Kend-Narrow", 1, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q47);
-        QuestionClass q48 = new QuestionClass("çdo kënd më pak se 180", "i lugët", "i myset", "kend-drejte", "kend-ngushte", 2, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q48 = new QuestionClass("Jeder Winkel kleiner als 180", "gelöffelt", "moosig", "kend-straight", "angle-narrow", 2, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q48);
-        QuestionClass q49 = new QuestionClass("Sa deputete perbehet parlamenti i Shqiperise", "160", "150", "140", "130", 3, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q49 = new QuestionClass("Aus wie vielen Abgeordneten besteht der Deutsche Bundestag", "160", "150", "598", "130", 3, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q49);
-        QuestionClass q50 = new QuestionClass("Monedha ne Korene e Veriut", "Yen", "Baht","Dram","Won", 4, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q50 = new QuestionClass("Währung in Nordkorea", "Yen", "Baht","Dram","Won", 4, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q50);
 
         //Medium Monday 5
-        QuestionClass q51 = new QuestionClass("Te vdesesh nga e qeshura", "Chrysippus", "Cardiomyopathy", "Congenital", "Coronary", 1, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q51 = new QuestionClass("Vor Lachen sterben", "Chrysippus", "Cardiomyopathy", "Congenital", "Coronary", 1, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q51);
-        QuestionClass q52 = new QuestionClass("Trofta, barrakuda dhe krapi janë të gjitha llojet e çfarë?", "Gjitare", "Peshk", "Amfib","Gjitarët detarë", 2, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q52 = new QuestionClass("Forelle, Barrakuda und Mist sind alle Arten von was?", "Säugetier", "Fisch", "Amphibie", "Meeressäuger", 2, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q52);
-        QuestionClass q53 = new QuestionClass("Si quhet shkopi Australian që mund të kthehet te hedhësi i tij?","Hedhës shtizash", "Hedhes shkopi", "Boomerang", "Boomering", 3, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q53 = new QuestionClass("Was ist der australische Stock, der zu seinem Werfer zurückkehren kann?","Speerwerfer", "Stockwerfer", "Boomerang", "Boomering", 3, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q53);
-        QuestionClass q54 = new QuestionClass("Sa pjesë ka një lojtar në Ludo?", "1", "2","3","4", 4, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q54 = new QuestionClass("Wie viele Teile gibt es einen Spieler in Ludo?", "1", "2","3","4", 4, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q54);
 
         // Medium Monday 6
 
-        QuestionClass q55 = new QuestionClass("Sa lojtarë ka atje në një ekip rugby", "15", "17", "20", "23", 1, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q55 = new QuestionClass("Wie viele Spieler gibt es in einer Rugby-Mannschaft" "15", "17", "20", "23", 1, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q55);
-        QuestionClass q56 = new QuestionClass("Ping-pongu është një emër alternativ për cilin sport?", "Tenis", "Tabel Tenis", "Tenis Pong","Asnje", 2, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q56 = new QuestionClass("Ping-Pong ist ein alternativer Name für welche Sportart?", "Tennis", "Tennis Tischtennis", "Tennis Pong", "Niemand", 2, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q56);
-        QuestionClass q57 = new QuestionClass("Cila është prona më e shtrenjtë në një bord standard monopoli?","Mayfair", "Trafalgar Square", "Boardwalk", "BOND STREET", 3, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q57 = new QuestionClass("Was ist die teuerste Immobilie auf einem Standard-Monopol-Board?","Mayfair", "Trafalgar Square", "Boardwalk", "BOND STREET", 3, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q57);
-        QuestionClass q58 = new QuestionClass("Cila fanellë me ngjyra fitohet nga lideri në Tour de France?", "Bardhe", "Blu","Kuqe","Jeshile", 4, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q58 = new QuestionClass("Welches farbige Trikot gewinnt der Führende bei der Tour de France?", "Weiß", "Blau", "Rot", "Grün", 4, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q58);
 
         // Medium Monday EXTRA +2
 
-        QuestionClass q59 = new QuestionClass("Nofka e qytetit të New York-ut","Time Square", "Wall Street", "Big Apple", "The Empire State", 3, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q59 = new QuestionClass("New York Citys Spitzname","Time Square", "Wall Street", "Big Apple", "The Empire State", 3, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q59);
-        QuestionClass q60 = new QuestionClass("Shpikësi i Nintendo Wii", "Minoru Arakawa", "Tei Yamauchi","Fusajiro Yamauchi","Kashi Kabushiki", 4, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q60 = new QuestionClass("Erfinder der Nintendo Wii", "Minoru Arakawa", "Tei Yamauchi","Fusajiro Yamauchi","Kashi Kabushiki", 4, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q60);
 
 

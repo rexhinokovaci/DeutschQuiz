@@ -215,7 +215,7 @@ public class QuizDbHelper extends SQLiteOpenHelper {
 
         // Medium Monday 6
 
-        QuestionClass q55 = new QuestionClass("Wie viele Spieler gibt es in einer Rugby-Mannschaft" "15", "17", "20", "23", 1, QuestionClass.DIFFICULTY_MEDIUM);
+        QuestionClass q55 = new QuestionClass("Wie viele Spieler gibt es in einer Rugby-Mannschaft", "15", "17", "20", "23", 1, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q55);
         QuestionClass q56 = new QuestionClass("Ping-Pong ist ein alternativer Name für welche Sportart?", "Tennis", "Tennis Tischtennis", "Tennis Pong", "Niemand", 2, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q56);
@@ -233,80 +233,80 @@ public class QuizDbHelper extends SQLiteOpenHelper {
 
 
         // TODO: 1/11/2021 Wednesday Hard 0
-        QuestionClass q61 = new QuestionClass("Autostrada më e gjatë në botë", "Trans-Canada", "katërkëndëshit të artë, Indi", "Autostrada Kombëtare e Kinës 010", "Linja amerikane 20", 1, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q61 = new QuestionClass("World's Longest Highway", "Trans-Canada", "Golden Quadrangle, India", "China National Highway 010", "American Line 20", 1, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q61);
-        QuestionClass q62 = new QuestionClass("Gjatësia e autostradës më të gjatë në botë", "7000 km", "8000 km", "9000 km","10000 km", 2, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q62 = new QuestionClass("Länge der längsten Autobahn der Welt", "7000 km", "8000 km", "9000 km", "10000 km", 2, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q62);
-        QuestionClass q63 = new QuestionClass("Vend që përbën gati një të tretën e prodhimit të përgjithshëm të drurit në botë","Kina", "Etiopia", "India", "Nigeria", 3, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q63 = new QuestionClass("Land, das fast ein Drittel der gesamten Holzproduktion der Welt ausmacht", "China", "Äthiopien", "Indien", "Nigeria", 3, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q63);
-        QuestionClass q64 = new QuestionClass("Vend i njohur si \"Vendi i bakrit\"", "Cape Town", "Bejing","Kongo","Zambia", 4, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q64 = new QuestionClass("Ort bekannt als \"Kupferland\"", "Kapstadt", "Peking", "Kongo", "Sambia", 4, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q64);
 
         // Wednesday HARD 1
-        QuestionClass q65 = new QuestionClass("Lumi Volga derdhet në", "Deti Kaspik", "Deti i Zi", "Gjiri Persik", "Deti i Kuq", 1, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q65 = new QuestionClass("Die Wolga mündet in", "Kaspisches Meer", "Schwarzes Meer", "Persischer Golf", "Rotes Meer", 1, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q65);
-        QuestionClass q66 = new QuestionClass("Vendi më i ftohtë në Tokë", "Anadyr ne Siberi", "Verkoyansk ne Siberi", "Novosibirsk ne Siberi","Tobolsk ne Siberi", 2, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q66 = new QuestionClass("Kältester Ort der Erde", "Anadyr in Sibirien", "Verkoyansk in Sibirien", "Nowosibirsk in Sibirien", "Tobolsk in Sibirien", 2, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q66);
-        QuestionClass q67 = new QuestionClass("Vend i cili renditet i dyti për nga sipërfaqja e tokës","Kina", "Rusia", "Kanada", "Shtetet e Bashkuara te Amerikes", 3, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q67 = new QuestionClass("Land, das nach Landfläche an zweiter Stelle steht", "China", "Russland", "Kanada", "Vereinigte Staaten von Amerika", 3, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q67);
-        QuestionClass q68 = new QuestionClass("Ishulli më i madh në detin Mesdhe", "Lampedusa", "Pantelleria","Malta","Sicili", 4, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q68 = new QuestionClass("Die größte Insel im Mittelmeer", "Lampedusa", "Pantelleria", "Malta", "Sizilien", 4, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q68);
 
         // Wednesday Hard 2
 
-        QuestionClass q69 = new QuestionClass("Lumi Jordan derdhet në", "Deti i vdekur", "Deti i Kuq", "Deti Arabik", "Deti i Kuq", 1, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q69 = new QuestionClass("Der Jordan fließt in das Tote Meer", "das Albanien Meer", "das Arabische Meer", "das Rote Meer", "Das Blau Meer",1, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q69);
-        QuestionClass q70 = new QuestionClass("Kryeqyteti që qëndron në lumin Danub", "Sarajevo", "Beograd", "Zagreb","Graz", 2, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q70 = new QuestionClass("Hauptstadt, die an der Donau steht", "Sarajevo", "Belgrad", "Zagreb", "Graz", 2, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q70);
-        QuestionClass q71 = new QuestionClass("Gjatësia e kanalit anglez","562 km", "563 km", "564 km", "565 km", 3, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q71 = new QuestionClass("Länge des Ärmelkanals", "562 km", "563 km", "564 km", "565 km", 3, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q71);
-        QuestionClass q72 = new QuestionClass("Qyteti më i vjetër i njohur në botë", "Jericho", "Plovdiv","Gaziantep","Damascus", 4, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q72 = new QuestionClass("Die älteste bekannte Stadt der Welt", "Jericho", "Plovdiv", "Gaziantep", "Damaskus", 4, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q72);
 
         //Wednesday Hard 3
-        QuestionClass q73 = new QuestionClass("Qyteti i Kanaleve", "Venecia", "Amsterdam", "Stockholm", "Annecys", 1, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q73 = new QuestionClass("Canal City", "Venice", "Amsterdam", "Stockholm", "Annecys", 1, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q73);
-        QuestionClass q74 = new QuestionClass("Vend në të cilin rrjedh lumi Wangchu", "Torsha", "Myanmar", "Singimari","Jaldhaka", 2, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q74 = new QuestionClass("Ort, an dem der Wangchu-Fluss fließt", "Torsha", "Myanmar", "Singimari", "Jaldhaka", 2, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q74);
-        QuestionClass q75 = new QuestionClass("Qyteti i cili është qendra më e madhe për prodhimin e automobilave në botë","Munich", "Frankfurt", "Detroit", "Mannheim", 3, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q75 = new QuestionClass("Die Stadt, die das größte Zentrum für Automobilproduktion der Welt ist", "München", "Frankfurt", "Detroit", "Mannheim", 3, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q75);
-        QuestionClass q76 = new QuestionClass("Vendi i cili është prodhuesi më i madh i gomës në botë", "Japonia", "India","Kina","Malaysia", 4, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q76 = new QuestionClass("Das Land, das der größte Kautschukproduzent der Welt ist", "Japan", "Indien", "China", "Malaysia", 4, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q76);
 
         //WEDNESDAY HARD 4
-        QuestionClass q77 = new QuestionClass("Në fizikë, puna përcaktohet si","forca x distanca", "forca / distanca", "distance / koha", "forca x koha", 1, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q77 = new QuestionClass("In der Physik ist Arbeit definiert als", "Kraft x Abstand", "Stärke/Abstand", "Entfernung/Zeit", "Kraft x Zeit", 1, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q77);
-        QuestionClass q78 = new QuestionClass("Nëse ngrini dy ngarkesa një kat, sa punë bëni në krahasim me ngritjen vetëm të një ngarkese në një kati?", "Gjysem", "Dy her me shume", "Kater her me shume","Nuk Ndryshon", 2, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q78 = new QuestionClass("Wenn Sie zwei Lasten pro Etage heben, wie viel Arbeit müssen Sie im Vergleich zum Heben von nur einer Last auf einem Boden leisten?", "Halbe", "Noch zwei Mal", "Kater sie mehr", "Es ändert sich nicht", 2, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q78);
-        QuestionClass q79 = new QuestionClass("Njësia e punës është","Watt", "Newton", "Joule", "Koha", 3, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q79 = new QuestionClass("Die Arbeitseinheit ist", "Watt", "Newton", "Joule", "Zeit", 3, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q79);
-        QuestionClass q80 = new QuestionClass("Sasia e energjisë potenciale që posedon një objekt i ngritur është e barabartë me", "vlera e nxitimit për shkak të gravitetit.", "Fuqia e përdorur për ngritjen e saj.","distanca që ngrihet.","puna e bërë në ngritjen e saj.", 4, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q80 = new QuestionClass("Die Menge an potentieller Energie, die ein erhöhtes Objekt besitzt, ist gleich", "der Wert der Eile aufgrund der Schwerkraft", "Die Kraft, die für seinen Aufstieg verwendet wird.", "die Entfernung, die steigt.", "die Arbeit, die in seinem Aufstieg geleistet wird.",  4, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q80);
 
         //Wednesday Hard 5
-        QuestionClass q81 = new QuestionClass("Energjia kinetike e një objekti është e barabartë me", "gjysma e produktit të masës", "masa e saj u shumëfishua", "masa u pjestua ", "masa u shumezua me kohen", 1, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q81 = new QuestionClass("Die kinetische Energie eines Objekts ist gleich", "die Hälfte des Massenprodukts", "seine Masse multipliziert", "das Maß wurde geteilt", "das Maß wurde mit der Zeit multipliziert", 1, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q81);
-        QuestionClass q82 = new QuestionClass("Një shigjetë në një hark ka 70 J energji të mundshme. Duke supozuar se nuk ka humbje të energjisë në nxehtësi, sa energji kinetike do të ketë pasi të jetë qëlluar?", "60 J", "70 J", "80 J","90 J", 2, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q82 = new QuestionClass("Ein Pfeil in einem Bogen hat 70 J mögliche Energie. Angenommen, es gibt keinen Energieverlust in der Hitze, wie viel kinetische Energie wird es nach dem Schuss geben?", "60 J", "70 J", "80 J", "90 J", 2, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q82);
-        QuestionClass q83 = new QuestionClass("Kur shpejtësia e një makine trefishohet, energjia e saj kinetike","E njejte", "rritet me 3 herë", "rritet me 9 herë", "rritet me 21 herë", 3, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q83 = new QuestionClass("Wenn sich die Geschwindigkeit eines Autos verdreifacht, erhöht sich seine kinetische Energie", "Gleich", "erhöht sich um das 3-fache", "erhöht sich um das 9-fache", "erhöht sich um das 21-fache", 3, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q83);
-        QuestionClass q84 = new QuestionClass("Raketat lëshohen nga një aeroplan në drejtimin përpara të lëvizjes. Energjia kinetike e aeroplanit do të jetë", "E njejte", "Rritur","Ne Perpjestim te drejte me masen e rraketes","Ulur", 4, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q84 = new QuestionClass("Raketen werden von einem Flugzeug in Vorwärtsbewegungsrichtung abgefeuert. Die kinetische Energie des Flugzeugs wird sein", "Gleich", "Gewachsen", "In gutem Verhältnis zur Masse der Rakete", "Sitzend", 4, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q84);
 
         // Wednesday Hard 6
-        QuestionClass q85 = new QuestionClass("Cila kërkon më shumë punë: ngritja e një thesi 70 kg vertikalisht 2 metra apo ngritja e një thesi 35 kg vertikalisht 4 metra?", "Te dyja", "Thesi 70 Kg", "Thesi 35 Kg", "Asnje", 1, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q85 = new QuestionClass("Was erfordert mehr Arbeit: heben Sie einen 70 kg Sack vertikal 2 Meter oder heben Sie einen 35 kg Sack vertikal 4 Meter?", "Beide", "Sack 70 Kg", "Sack 35 Kg", "Nein", 1, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q85);
-        QuestionClass q86 = new QuestionClass("Një top hidhet në ajër me 100 J energji kinetike, e cila shndërrohet në energji potenciale gravitacionale në majë të trajektores së saj. Kur të kthehet në nivelin e tij origjinal pasi të ketë hasur në rezistencën e ajrit, energjia e saj kinetike është", "> 100 J", "< 100 J", "= 100 J","<= 100 J", 2, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q86 = new QuestionClass("Ein Ball wird mit 100 J kinetischer Energie in die Luft geworfen, die sich an der Spitze seiner Flugbahn in potentielle Gravitationsenergie verwandelt. Wenn es nach dem Luftwiderstand auf sein ursprüngliches Niveau zurückkehrt, beträgt seine kinetische Energie", "> 100 J", "< 100 J", "= 100 J", "<= 100 J", 2, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q86);
         QuestionClass q87 = new QuestionClass("Një objekt që ka energji kinetike duhet të jetë","Ne pozicion fillestar", "Ne Renie", "Duke Levizur", "Duke u Ngritur", 3, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q87);
-        QuestionClass q88 = new QuestionClass("Merrni parasysh molekulat e gazit hidrogjen dhe molekulat e gazit më të rëndë të oksigjenit që kanë të njëjtën energji kinetike. Molekulat me shpejtësi më të madhe janë", "Asnje", "Te dyja shpejtesi te njejte","Oksigjeni","Hidrogjeni", 4, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q88 = new QuestionClass("Berücksichtigen Sie Wasserstoffgasmoleküle und Moleküle des schwersten Sauerstoffgases, die die gleiche kinetische Energie haben. Die Moleküle mit der höchsten Geschwindigkeit sind", "Keine", "Beide Geschwindigkeiten des gleichen", "Sauerstoff", "Wasserstoff", 4, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q88);
 
         // Wednesday Hard +2
-        QuestionClass q89 = new QuestionClass("Sa xhule pune bëhen në një kuti kur një forcë prej 25 dhe e shtyn atë 3 m?","15 J ", "45 J ", "75 J", "95 J", 3, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q89 = new QuestionClass("Wie viele Arbeitsdschungel werden in einer Box gemacht, wenn eine Kraft von 25 und drückt sie 3 m?", "15 J", "45 J", "75 J", "95 J", 3, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q89);
-        QuestionClass q90 = new QuestionClass("Sa energji kërkohet për të bërë 40 J punë në një objekt në 5 sekonda?", "0", "2","4","8", 4, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q90 = new QuestionClass("Wie viel Energie wird benötigt, um 40 J Arbeit an einem Objekt in 5 Sekunden zu erledigen?", "0", "2","4","8", 4, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q90);
 
 

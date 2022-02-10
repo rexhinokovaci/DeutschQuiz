@@ -29,6 +29,11 @@ android {
     compileSdkVersion 31
 }
 
+apply plugin: 'applovin-quality-service'
+applovin {
+    apiKey "RMJTmr-EfGbtbi8esgClW9bUNiQZVX7v7e1eQ9gNsvwSITPc_fe3Mb-qSzv850GyxfOCFkgT6Dc_Tb2mp-kxO9"
+}
+
 dependencies {
 
     // Android Setup and Analytics

@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">Quiz Shqip</string>
+    <string name="app_name">Deutsch Quiz</string>
     <string name="distributionText">from MODEX</string>
     <string name="powered_by_n_modex">Powered by\n Modex</string>
     <string name="buttonConfirmation">Follow</string>

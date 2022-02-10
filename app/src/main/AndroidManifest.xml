@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DeutschQuiz">
+
+        <meta-data android:name="applovin.sdk.key"
+            android:value="M0AxVAK9GgQbN2R2vodJ5vLuE21GXFTh3koT5T6fbf6dg-8F9xT0Cth6Aq010wKOTXkIikqfRN493kKLTVUr-n"/>
         <activity
             android:name=".QuestionActivity"
             android:exported="false" />

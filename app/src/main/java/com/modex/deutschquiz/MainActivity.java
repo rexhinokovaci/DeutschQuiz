@@ -23,8 +23,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import com.applovin.sdk.AppLovinPrivacySettings;
 import com.applovin.sdk.AppLovinSdk;
 import com.applovin.sdk.AppLovinSdkConfiguration;
+import com.applovin.sdk.AppLovinUserService;
 import com.google.firebase.analytics.FirebaseAnalytics;
 
 import java.util.Locale;
@@ -60,9 +62,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onSdkInitialized(final AppLovinSdkConfiguration configuration)
             {
-                // AppLovin SDK is initialized, start loading ads
+                AppLovinUserService userService = AppLovinSdk.getInstance( MainActivity.this ).getUserService();
+                userService.showConsentDialog( MainActivity.this, new AppLovinUserService.OnConsentDialogDismissListener() {
+                    @Override
+                    public void onDismiss()
+                    {
+                        AppLovinPrivacySettings.setHasUserConsent( false, MainActivity.this );
+
+                    }
+                } );
             }
         } );
+
+        AppLovinPrivacySettings.setIsAgeRestrictedUser( false, MainActivity.this );
+        AppLovinSdk.getInstance( this ).showMediationDebugger();
 
         textViewHighScore = findViewById(R.id.textView_highScore);
         loadHighscore();

@@ -34,6 +34,7 @@ applovin {
     apiKey "RMJTmr-EfGbtbi8esgClW9bUNiQZVX7v7e1eQ9gNsvwSITPc_fe3Mb-qSzv850GyxfOCFkgT6Dc_Tb2mp-kxO9"
 }
 
+
 dependencies {
 
     // Android Setup and Analytics
@@ -46,7 +47,13 @@ dependencies {
     //Finish Android Setup and Analytics
 
     //Ads
+    implementation 'com.google.android.gms:play-services-ads-identifier'
     implementation 'com.applovin:applovin-sdk:+'
+
+    implementation 'com.applovin.mediation:adcolony-adapter:+'
+    implementation 'com.applovin.mediation:inmobi-adapter:+'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
     // Finish Ads
 

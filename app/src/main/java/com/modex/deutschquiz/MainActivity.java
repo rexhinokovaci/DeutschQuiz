@@ -23,10 +23,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import com.applovin.sdk.AppLovinPrivacySettings;
 import com.applovin.sdk.AppLovinSdk;
 import com.applovin.sdk.AppLovinSdkConfiguration;
-import com.applovin.sdk.AppLovinUserService;
 import com.google.firebase.analytics.FirebaseAnalytics;
 
 import java.util.Locale;
@@ -59,23 +57,19 @@ public class MainActivity extends AppCompatActivity {
         // Please make sure to set the mediation provider value to "max" to ensure proper functionality
         AppLovinSdk.getInstance( this ).setMediationProvider( "max" );
         AppLovinSdk.initializeSdk( this, new AppLovinSdk.SdkInitializationListener() {
-            @Override
-            public void onSdkInitialized(final AppLovinSdkConfiguration configuration)
-            {
-                AppLovinUserService userService = AppLovinSdk.getInstance( MainActivity.this ).getUserService();
-                userService.showConsentDialog( MainActivity.this, new AppLovinUserService.OnConsentDialogDismissListener() {
                     @Override
-                    public void onDismiss()
-                    {
-                        AppLovinPrivacySettings.setHasUserConsent( false, MainActivity.this );
+                    public void onSdkInitialized(final AppLovinSdkConfiguration configuration) {
+
+
+                        // DUMB STUFF IN HERE
 
                     }
-                } );
-            }
-        } );
+                });
 
-        AppLovinPrivacySettings.setIsAgeRestrictedUser( false, MainActivity.this );
-        AppLovinSdk.getInstance( this ).showMediationDebugger();
+
+
+
+
 
         textViewHighScore = findViewById(R.id.textView_highScore);
         loadHighscore();
@@ -246,6 +240,10 @@ class ViewPagerAdapter extends PagerAdapter {
         ViewPager viewPager = (ViewPager) container;
         View view = (View) object;
         viewPager.removeView(view);
+    }
+
+}
+
     }
 
 }

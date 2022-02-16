@@ -244,6 +244,3 @@ class ViewPagerAdapter extends PagerAdapter {
 
 }
 
-    }
-
-}

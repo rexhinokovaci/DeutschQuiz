@@ -231,10 +231,9 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         AddQuestion(q59);
         QuestionClass q60 = new QuestionClass("Erfinder der Nintendo Wii", "Minoru Arakawa", "Tei Yamauchi","Fusajiro Yamauchi","Kashi Kabushiki", 4, QuestionClass.DIFFICULTY_MEDIUM);
         AddQuestion(q60);
-
-
-        // TODO: 1/11/2021 Wednesday Hard 0
-        QuestionClass q61 = new QuestionClass("World's Longest Highway", "Trans-Canada", "Golden Quadrangle, India", "China National Highway 010", "American Line 20", 1, QuestionClass.DIFFICULTY_HARD);
+        //TODO Error Q61
+        // TODO: 1/11/2021 Wednesday Hard 0 Error
+        QuestionClass q61 = new QuestionClass("Längste Autobahn der Welt", "Trans-Kanada", "Goldenes Viereck Indien", "China National Highway 010","Amerikanische Linie 20",1, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q61);
         QuestionClass q62 = new QuestionClass("Länge der längsten Autobahn der Welt", "7000 km", "8000 km", "9000 km", "10000 km", 2, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q62);
@@ -299,10 +298,11 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         AddQuestion(q85);
         QuestionClass q86 = new QuestionClass("Ein Ball wird mit 100 J kinetischer Energie in die Luft geworfen, die sich an der Spitze seiner Flugbahn in potentielle Gravitationsenergie verwandelt. Wenn es nach dem Luftwiderstand auf sein ursprüngliches Niveau zurückkehrt, beträgt seine kinetische Energie", "> 100 J", "< 100 J", "= 100 J", "<= 100 J", 2, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q86);
-        QuestionClass q87 = new QuestionClass("Një objekt që ka energji kinetike duhet të jetë","Ne pozicion fillestar", "Ne Renie", "Duke Levizur", "Duke u Ngritur", 3, QuestionClass.DIFFICULTY_HARD);
+        QuestionClass q87 = new QuestionClass("Ein Objekt, das kinetische Energie hat, sollte sein", "In Ausgangsposition", "Im Fallen", "Bewegen", "Steigen", 3, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q87);
         QuestionClass q88 = new QuestionClass("Berücksichtigen Sie Wasserstoffgasmoleküle und Moleküle des schwersten Sauerstoffgases, die die gleiche kinetische Energie haben. Die Moleküle mit der höchsten Geschwindigkeit sind", "Keine", "Beide Geschwindigkeiten des gleichen", "Sauerstoff", "Wasserstoff", 4, QuestionClass.DIFFICULTY_HARD);
         AddQuestion(q88);
+
 
         // Wednesday Hard +2
         QuestionClass q89 = new QuestionClass("Wie viele Arbeitsdschungel werden in einer Box gemacht, wenn eine Kraft von 25 und drückt sie 3 m?", "15 J", "45 J", "75 J", "95 J", 3, QuestionClass.DIFFICULTY_HARD);

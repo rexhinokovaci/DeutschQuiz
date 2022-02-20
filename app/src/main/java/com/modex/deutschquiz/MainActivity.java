@@ -3,16 +3,20 @@ package com.modex.deutschquiz;
 
 import static java.lang.String.format;
 
+import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -23,12 +27,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import com.applovin.mediation.MaxAd;
+import com.applovin.mediation.MaxAdListener;
+import com.applovin.mediation.MaxAdViewAdListener;
+import com.applovin.mediation.MaxError;
+import com.applovin.mediation.ads.MaxAdView;
+import com.applovin.mediation.ads.MaxInterstitialAd;
+import com.applovin.sdk.AppLovinPrivacySettings;
 import com.applovin.sdk.AppLovinSdk;
 import com.applovin.sdk.AppLovinSdkConfiguration;
+import com.applovin.sdk.AppLovinUserService;
 import com.google.firebase.analytics.FirebaseAnalytics;
 
 import java.util.Locale;
 import java.util.Timer;
+import java.util.concurrent.TimeUnit;
 
 
 @SuppressWarnings("ALL")
@@ -46,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
     private Spinner spinnerDifficulty;
     private ViewPager viewPageId;
     private int customPosition = 0;
+    MaxAdView adView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,12 +73,33 @@ public class MainActivity extends AppCompatActivity {
         AppLovinSdk.initializeSdk( this, new AppLovinSdk.SdkInitializationListener() {
                     @Override
                     public void onSdkInitialized(final AppLovinSdkConfiguration configuration) {
+                        AppLovinPrivacySettings.setIsAgeRestrictedUser( false, MainActivity.this );
 
 
                         // DUMB STUFF IN HERE
+                        AppLovinUserService userService = AppLovinSdk.getInstance( MainActivity.this ).getUserService();
+                        userService.showConsentDialog( MainActivity.this, new AppLovinUserService.OnConsentDialogDismissListener() {
+
+                            @Override
+                            public void onDismiss()
+
+                            {
+
+                            }
+
+
+                        } );
+
 
                     }
                 });
+
+//        adView.setVisibility( View.VISIBLE );
+//        adView.startAutoRefresh();
+
+
+
+
 
 
 
@@ -241,6 +276,144 @@ class ViewPagerAdapter extends PagerAdapter {
         View view = (View) object;
         viewPager.removeView(view);
     }
+
+
+    public class AdClassInterstitial extends Activity
+            implements MaxAdListener
+    {
+        private MaxInterstitialAd interstitialAd;
+        private int retryAttempt;
+
+        void createInterstitialAd()
+        {
+            interstitialAd = new MaxInterstitialAd( "YOUR_AD_UNIT_ID", this );
+            interstitialAd.setListener( this );
+
+            // Load the first ad
+            interstitialAd.loadAd();
+        }
+
+        // MAX Ad Listener
+        @Override
+        public void onAdLoaded(final MaxAd maxAd)
+        {
+            // Interstitial ad is ready to be shown. interstitialAd.isReady() will now return 'true'
+
+            // Reset retry attempt
+            retryAttempt = 0;
+        }
+
+        @Override
+        public void onAdLoadFailed(final String adUnitId, final MaxError error)
+        {
+            // Interstitial ad failed to load
+            // AppLovin recommends that you retry with exponentially higher delays up to a maximum delay (in this case 64 seconds)
+
+            retryAttempt++;
+            long delayMillis = TimeUnit.SECONDS.toMillis( (long) Math.pow( 2, Math.min( 6, retryAttempt ) ) );
+
+            new Handler().postDelayed(new Runnable()
+            {
+                @Override
+                public void run()
+                {
+                    interstitialAd.loadAd();
+                }
+            }, delayMillis );
+        }
+
+        @Override
+        public void onAdDisplayFailed(final MaxAd maxAd, final MaxError error)
+        {
+            // Interstitial ad failed to display. AppLovin recommends that you load the next ad.
+            interstitialAd.loadAd();
+        }
+
+        @Override
+        public void onAdDisplayed(final MaxAd maxAd) {
+
+            Log.d("AdDisplayed", "AD has been displayed");
+        }
+
+        @Override
+        public void onAdClicked(final MaxAd maxAd) {
+            Log.d("AdClicked", "AD has been clicked");
+        }
+
+        @Override
+        public void onAdHidden(final MaxAd maxAd)
+        {
+            // Interstitial ad is hidden. Pre-load the next ad
+            interstitialAd.loadAd();
+        }
+    }
+
+    public class AdClassBanner extends Activity
+            implements MaxAdViewAdListener
+    {
+        private MaxAdView adView;
+
+        void createBannerAd()
+        {
+            adView = new MaxAdView( "YOUR_AD_UNIT_ID", this );
+            adView.setListener( this );
+
+            // Stretch to the width of the screen for banners to be fully functional
+            int width = ViewGroup.LayoutParams.MATCH_PARENT;
+
+            // Banner height on phones and tablets is 50 and 90, respectively
+            int heightPx = getResources().getDimensionPixelSize( R.dimen.banner_height );
+
+            adView.setLayoutParams( new FrameLayout.LayoutParams( width, heightPx ) );
+
+            // Set background or background color for banners to be fully functional
+            adView.setBackgroundColor(Color.WHITE);
+
+            ViewGroup rootView = findViewById( android.R.id.content );
+            rootView.addView( adView );
+
+            // Load the ad
+            adView.loadAd();
+        }
+
+        // MAX Ad Listener
+        @Override
+        public void onAdLoaded(final MaxAd maxAd) {
+            Log.d("ADLoad","Ad Loaded: " + maxAd);
+        }
+
+        @Override
+        public void onAdLoadFailed(final String adUnitId, final MaxError error) {
+            Log.d("ADLoadFailed","Ad Load Failed: " + error);
+        }
+
+        @Override
+        public void onAdDisplayFailed(final MaxAd maxAd, final MaxError error) {
+            Log.d("AdDisplayFailed","Ad Display Failed: "+ error);
+        }
+
+        @Override
+        public void onAdClicked(final MaxAd maxAd) {
+            Log.d("ADClick","Ad Clicked: "+maxAd);
+        }
+
+        @Override
+        public void onAdExpanded(final MaxAd maxAd) {
+            Log.d("AdExpanded","Ad Expanded: "+ maxAd);
+        }
+
+        @Override
+        public void onAdCollapsed(final MaxAd maxAd) {
+            Log.d("ADCollapsed","Ad Collapsed: "+ maxAd);
+        }
+
+        @Override
+        public void onAdDisplayed(final MaxAd maxAd) { /* DO NOT USE - THIS IS RESERVED FOR FULLSCREEN ADS ONLY AND WILL BE REMOVED IN A FUTURE SDK RELEASE */ }
+
+        @Override
+        public void onAdHidden(final MaxAd maxAd) { /* DO NOT USE - THIS IS RESERVED FOR FULLSCREEN ADS ONLY AND WILL BE REMOVED IN A FUTURE SDK RELEASE */ }
+    }
+
 
 }
 

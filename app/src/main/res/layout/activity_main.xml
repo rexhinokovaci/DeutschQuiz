@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:maxads="http://schemas.applovin.com/android/1.0"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     tools:context=".MainActivity">
 
 
     <RelativeLayout
-        android:layout_width="0dp"
+        android:id="@+id/relativeLayout3"
+        android:background="@color/javablue"
 
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/maxAdView"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/viewPageId">
 
@@ -27,9 +30,11 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="140dp"
-            android:layout_marginEnd="140dp"
-            android:layout_marginBottom="50dp"
+            android:layout_marginStart="133dp"
+            android:layout_marginLeft="133dp"
+            android:layout_marginEnd="147dp"
+            android:layout_marginRight="147dp"
+            android:layout_marginBottom="75dp"
             android:background="@drawable/buttonforplay"
             android:fontFamily="@font/open_sans_bold"
             android:onClick="openConfirmation"
@@ -40,7 +45,6 @@
             app:iconTint="#000000"
             app:rippleColor="#000000" />
 
-
         <TextView
             android:id="@+id/textView_highScore"
             android:layout_width="174dp"
@@ -49,9 +53,9 @@
             android:layout_above="@+id/spinner_difficulty"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:layout_marginStart="19dp"
-            android:layout_marginLeft="19dp"
-            android:layout_marginBottom="59dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
             android:fontFamily="@font/open_sans_semibold"
             android:textColor="#6b705c"
             android:textSize="15sp" />
@@ -59,17 +63,19 @@
         <Spinner
             android:id="@+id/spinner_difficulty"
             android:layout_width="40dp"
-            android:textAlignment="center"
             android:layout_height="40dp"
             android:layout_above="@+id/buttonConfirm"
             android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="140dp"
-            android:layout_marginEnd="140dp"
-            android:layout_marginBottom="25dp"
-            android:gravity="center_horizontal"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true" />
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="132dp"
+            android:layout_marginLeft="132dp"
+            android:layout_marginEnd="148dp"
+            android:layout_marginRight="148dp"
+            android:layout_marginBottom="49dp"
+            android:gravity="center_horizontal"
+            android:textAlignment="center" />
     </RelativeLayout>
 
     <androidx.viewpager.widget.ViewPager
@@ -85,6 +91,19 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true" />
+
+    <com.applovin.mediation.ads.MaxAdView
+        android:id="@+id/maxAdView"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+
+        android:background="#ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        maxads:adUnitId="YOUR_AD_UNIT_ID" />
+
+
 
 
 

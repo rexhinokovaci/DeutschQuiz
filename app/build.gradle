@@ -54,6 +54,8 @@ dependencies {
     implementation 'com.applovin.mediation:inmobi-adapter:+'
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.testng:testng:6.9.6'
 
     // Finish Ads
 

@@ -44,7 +44,7 @@ import java.util.Timer;
 import java.util.concurrent.TimeUnit;
 
 
-@SuppressWarnings("ALL")
+
 public class MainActivity extends AppCompatActivity {
     private FirebaseAnalytics mFirebaseAnalytics;
 
@@ -96,6 +96,8 @@ public class MainActivity extends AppCompatActivity {
 
 //        adView.setVisibility( View.VISIBLE );
 //        adView.startAutoRefresh();
+
+        AppLovinSdk.getInstance( this ).showMediationDebugger();
 
 
 

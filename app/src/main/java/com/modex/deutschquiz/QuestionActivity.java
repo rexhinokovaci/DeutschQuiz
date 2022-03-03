@@ -9,6 +9,9 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -17,6 +20,11 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.applovin.mediation.MaxAd;
+import com.applovin.mediation.MaxAdViewAdListener;
+import com.applovin.mediation.MaxError;
+import com.applovin.mediation.ads.MaxAdView;
+import com.applovin.sdk.AppLovinSdk;
 import com.google.firebase.analytics.FirebaseAnalytics;
 
 import java.util.ArrayList;
@@ -24,10 +32,8 @@ import java.util.Collections;
 import java.util.Locale;
 
 
+public class QuestionActivity extends AppCompatActivity implements MaxAdViewAdListener {
 
-public class QuestionActivity extends AppCompatActivity {
-
-    private FirebaseAnalytics mFirebaseAnalytics;
     private static final long COUNT_DOWN_TIME = 30000;
     private static final String KEY_SCORE = "keyScore";
     private static final String KEY_QUESTION_COUNT = "keyQuestionCount";
@@ -35,7 +41,7 @@ public class QuestionActivity extends AppCompatActivity {
     private static final String KEY_ANSWERED = "keyAnswered";
     private static final String KEY_QUESTION_LIST = "keyQuestionList";
     public static final String EXTRA_SCORE = "extraScore";
-    private final String TAG = "";
+
 
     private long backPressed;
 
@@ -49,7 +55,7 @@ public class QuestionActivity extends AppCompatActivity {
     private long timeMillis;
     private boolean answered;
     private ArrayList<QuestionClass> questionsClassList;
-    @SuppressWarnings("unused")
+
     String ADV;
 
 
@@ -59,7 +65,7 @@ public class QuestionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question);
 
-        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+        FirebaseAnalytics mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         textViewScores = findViewById(R.id.textViewScore);
         textViewQuestion = findViewById(R.id.textViewQuestion);
@@ -72,6 +78,15 @@ public class QuestionActivity extends AppCompatActivity {
         radioButton4 = findViewById(R.id.radioButton4);
 
         textColorDefaultCD = textViewCountDown.getTextColors();
+
+        AppLovinSdk.getInstance( this ).setMediationProvider( "max" );
+        AppLovinSdk.initializeSdk( this, configuration -> {
+            // AppLovin SDK is initialized, start loading ads
+            createBannerAd();
+
+
+
+        });
 
         Intent intent = getIntent();
         String difficulty = intent.getStringExtra(MainActivity.EXTRA_DIFFICULTY);
@@ -153,9 +168,6 @@ public class QuestionActivity extends AppCompatActivity {
             // confirm
 
             timeMillis = COUNT_DOWN_TIME;
-//            if (incremented) {
-//                timeMillis = 1000;
-//            }
 
             startCountDown();
         } else {
@@ -197,12 +209,35 @@ public class QuestionActivity extends AppCompatActivity {
         textViewCountDown.setText(timeFormatted);
 
         if (timeMillis < 6000) {
-            textViewCountDown.setTextColor(Color.BLUE);
+            textViewCountDown.setTextColor(Color.RED);
         } else {
             textViewCountDown.setTextColor(textColorDefaultCD);
         }
 
 //
+    }
+
+    void createBannerAd()
+    {
+        MaxAdView adView = new MaxAdView("1a77e71cf3c1a0b0", this);
+        adView.setListener( this );
+
+        // Stretch to the width of the screen for banners to be fully functional
+        int width = ViewGroup.LayoutParams.MATCH_PARENT;
+
+        // Banner height on phones and tablets is 50 and 90, respectively
+        int heightPx = getResources().getDimensionPixelSize( R.dimen.banner_height );
+
+        adView.setLayoutParams( new FrameLayout.LayoutParams( width, heightPx, Gravity.BOTTOM) );
+
+        // Set background or background color for banners to be fully functional
+        adView.setBackgroundColor( Color.WHITE);
+
+        ViewGroup rootView = findViewById( android.R.id.content );
+        rootView.addView(adView);
+
+        // Load the ad
+        adView.loadAd();
     }
 
 
@@ -291,4 +326,57 @@ public class QuestionActivity extends AppCompatActivity {
         outState.putParcelableArrayList(KEY_QUESTION_LIST, questionsClassList);
     }
 
+    @Override
+    public void onAdExpanded(MaxAd ad) {
+
+        Log.d("AD","Ad expanded",(Throwable) ad);
+
+    }
+
+    @Override
+    public void onAdCollapsed(MaxAd ad) {
+        Log.d("AD","Ad cOLLAPSED",(Throwable) ad);
+
+
+    }
+
+    @Override
+    public void onAdLoaded(MaxAd ad) {
+        Log.d("AD","Ad Loaded",(Throwable) ad);
+
+
+    }
+
+    @Override
+    public void onAdDisplayed(MaxAd ad) {
+
+        Log.d("AD","Ad expanded",(Throwable) ad);
+
+
+    }
+
+    @Override
+    public void onAdHidden(MaxAd ad) {
+        Log.d("AD","Ad is Hidden",(Throwable) ad);
+
+
+    }
+
+    @Override
+    public void onAdClicked(MaxAd ad) {
+
+        Log.d("AD","Ad is clicked", (Throwable) ad);
+
+
+    }
+
+    @Override
+    public void onAdLoadFailed(String adUnitId, MaxError error) {
+
+    }
+
+    @Override
+    public void onAdDisplayFailed(MaxAd ad, MaxError error) {
+
+    }
 }

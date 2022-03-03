@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:maxads="http://schemas.applovin.com/android/1.0"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,13 +9,13 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout3"
-        android:background="@color/javablue"
-
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/maxAdView"
-        app:layout_constraintEnd_toEndOf="parent"
 
+        android:layout_height="0dp"
+
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/viewPageId">
 
@@ -25,16 +24,16 @@
             android:id="@+id/buttonConfirm"
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:layout_below="@+id/spinner_difficulty"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
             android:layout_marginStart="133dp"
             android:layout_marginLeft="133dp"
+            android:layout_marginTop="49dp"
             android:layout_marginEnd="147dp"
             android:layout_marginRight="147dp"
-            android:layout_marginBottom="75dp"
             android:background="@drawable/buttonforplay"
             android:fontFamily="@font/open_sans_bold"
             android:onClick="openConfirmation"
@@ -50,12 +49,12 @@
             android:layout_width="174dp"
 
             android:layout_height="wrap_content"
-            android:layout_above="@+id/spinner_difficulty"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="37dp"
             android:fontFamily="@font/open_sans_semibold"
             android:textColor="#6b705c"
             android:textSize="15sp" />
@@ -64,16 +63,16 @@
             android:id="@+id/spinner_difficulty"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_above="@+id/buttonConfirm"
+            android:layout_below="@+id/textView_highScore"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginStart="132dp"
             android:layout_marginLeft="132dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="148dp"
             android:layout_marginRight="148dp"
-            android:layout_marginBottom="49dp"
             android:gravity="center_horizontal"
             android:textAlignment="center" />
     </RelativeLayout>
@@ -92,16 +91,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true" />
 
-    <com.applovin.mediation.ads.MaxAdView
-        android:id="@+id/maxAdView"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
 
-        android:background="#ffff"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        maxads:adUnitId="YOUR_AD_UNIT_ID" />
 
 
 

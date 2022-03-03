@@ -12,13 +12,13 @@ android {
         minSdk 16
         targetSdk 31
         versionCode 1
-        versionName "1.0"
+        versionName "1.1"
 
          }
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -48,14 +48,14 @@ dependencies {
 
     //Ads
     implementation 'com.google.android.gms:play-services-ads-identifier'
-    implementation 'com.applovin:applovin-sdk:+'
+    implementation 'com.applovin:applovin-sdk:11.2.0'
 
-    implementation 'com.applovin.mediation:adcolony-adapter:+'
-    implementation 'com.applovin.mediation:inmobi-adapter:+'
+    implementation 'com.applovin.mediation:adcolony-adapter:4.6.5.1'
+    implementation 'com.applovin.mediation:inmobi-adapter:10.0.3.1'
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
-    testImplementation 'org.junit.jupiter:junit-jupiter'
-    testImplementation 'org.testng:testng:6.9.6'
+    implementation 'androidx.appcompat:appcompat:1.6.0-alpha01'
+
 
     // Finish Ads
 

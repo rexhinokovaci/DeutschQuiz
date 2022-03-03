@@ -50,8 +50,9 @@
 
             android:contentDescription="@string/todo"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true" />
-        <!--            android:src="@drawable/logofrontback"-->
+            android:layout_alignParentRight="true"
+            android:src="@drawable/logo"/>
+
 
     </RelativeLayout>
 

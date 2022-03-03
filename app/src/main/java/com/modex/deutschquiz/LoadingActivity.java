@@ -1,18 +1,15 @@
 package com.modex.deutschquiz;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.analytics.FirebaseAnalytics;
 
 
 public class LoadingActivity extends AppCompatActivity {
-    private FirebaseAnalytics mFirebaseAnalytics;
-
-
 
 
     @Override
@@ -33,7 +30,7 @@ public class LoadingActivity extends AppCompatActivity {
             finish();
         }, SPLASH_TIME);
 
-        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+        FirebaseAnalytics mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         Bundle bundle = new Bundle();
         bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "LoadingId");
